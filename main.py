@@ -1,3 +1,58 @@
+class Biblioteka:
+    def __init__(self, tytul, autor, rok):
+        self.tytul = str(tytul)
+        self.autor = str(autor)
+        self.rok = (rok)
+    def __repr__(self):
+        return f"{self.tytul} {self.autor} {self.rok}"
+
+x = 0
+tablica_pozycji = []
+tablica_tytulow = []
+tablica_autorow = []
+ilosc = []
+wynik = []
+
+print("Podaj ilosc")
+podaj_ilosc = int(input())
+
+for podane_dane in range(podaj_ilosc):
+    #dana = input().split(',')
+    dana = eval(input())
+    tytul = dana[0]
+    autor = dana[1]
+    rok = dana[2]
+    pozycja = Biblioteka(tytul,autor,rok)
+    tablica_pozycji.append(pozycja)
+
+#print(tablica_pozycji)
+
+for pozycja in tablica_pozycji:
+    tablica_tytulow.append(pozycja.tytul)
+
+for y in tablica_tytulow:
+    ilosc.append(tytul.count(y))
+
+print(ilosc)
+
+for pozycja in tablica_pozycji:
+    wynik.append("('"+pozycja.tytul+"', '"+pozycja.autor+"', "+str(ilosc[x])+")")
+    x += 1
+    wynik = set(wynik)
+    wynik = sorted(wynik)
+
+for z in wynik:
+    print(z)
+
+
+
+
+
+
+
+
+"""
+
 import string
 
 
@@ -33,3 +88,4 @@ class Biblioteka:
    def __init__(self, tytul, autor, rok):
     self.tytul = tytul
     self.rok = rok
+"""
