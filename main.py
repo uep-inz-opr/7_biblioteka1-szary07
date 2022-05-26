@@ -21,7 +21,7 @@ for podane_dane in range(podaj_ilosc):
     dana = eval(input())
     tytul = dana[0]
     autor = dana[1]
-    rok = dana[2]
+    rok = int(dana[2])
     pozycja = Biblioteka(tytul,autor,rok)
     tablica_pozycji.append(pozycja)
 
