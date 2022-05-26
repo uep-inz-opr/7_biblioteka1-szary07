@@ -33,7 +33,7 @@ for pozycja in tablica_pozycji:
 for y in tablica_tytulow:
     ilosc.append(tytul.count(y))
 
-print(ilosc)
+#print(ilosc)
 
 for pozycja in tablica_pozycji:
     wynik.append("('"+pozycja.tytul+"', '"+pozycja.autor+"', "+str(ilosc[x])+")")
