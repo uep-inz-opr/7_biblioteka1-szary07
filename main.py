@@ -6,7 +6,7 @@ class Biblioteka:
     def __repr__(self):
         return f"{self.tytul} {self.autor} {self.rok}"
 
-x = 0
+
 tablica_pozycji = []
 tablica_tytulow = []
 tablica_autorow = []
@@ -31,10 +31,10 @@ for pozycja in tablica_pozycji:
     tablica_tytulow.append(pozycja.tytul)
 
 for y in tablica_tytulow:
-    ilosc.append(tytul.count(y))
+    ilosc.append(tablica_tytulow.count(y))
 
 #print(ilosc)
-
+x = 0
 for pozycja in tablica_pozycji:
     wynik.append("('"+pozycja.tytul+"', '"+pozycja.autor+"', "+str(ilosc[x])+")")
     x += 1
