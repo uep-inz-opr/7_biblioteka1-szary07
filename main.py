@@ -13,7 +13,7 @@ tablica_autorow = []
 ilosc = []
 wynik = []
 
-print("Podaj ilosc")
+#print("Podaj ilosc")
 podaj_ilosc = int(input())
 
 for podane_dane in range(podaj_ilosc):
@@ -43,14 +43,6 @@ for pozycja in tablica_pozycji:
 
 for z in wynik:
     print(z)
-
-
-
-
-
-
-
-
 """
 
 import string
